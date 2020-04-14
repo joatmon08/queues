@@ -20,3 +20,11 @@ output "queue_urls" {
     }
   ]
 }
+
+output "list_from_var" {
+  value = var.some_list
+}
+
+output "object_from_var" {
+  value = var.some_object
+}

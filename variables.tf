@@ -7,3 +7,13 @@ variable "environment" {
   type        = string
   description = "the environment for the queue"
 }
+
+variable "some_list" {
+  type        = list
+  description = "List of inputs"
+}
+
+variable "some_object" {
+  type        = map(object({ name = string }))
+  description = "Map of objects"
+}
