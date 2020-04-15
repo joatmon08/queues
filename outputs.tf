@@ -28,3 +28,13 @@ output "list_from_var" {
 output "object_from_var" {
   value = var.some_object
 }
+
+output "json_string" {
+  value = <<EOT
+  {
+    "hello" {
+      "world": []
+    }
+  }
+  EOT
+}
