@@ -9,7 +9,7 @@ variable "environment" {
 }
 
 variable "some_list" {
-  type        = list
+  type        = list(any)
   description = "List of inputs"
 }
 

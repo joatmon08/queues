@@ -1,7 +1,7 @@
 module "application_queue" {
-  source = "terraform-aws-modules/sqs/aws"
-
-  name = var.application
+  source  = "terraform-aws-modules/sqs/aws"
+  version = "2.1.0"
+  name    = var.application
 
   tags = {
     Service     = var.application
@@ -11,9 +11,9 @@ module "application_queue" {
 }
 
 module "application_dlq" {
-  source = "terraform-aws-modules/sqs/aws"
-
-  name = "${var.application}-dlq"
+  source  = "terraform-aws-modules/sqs/aws"
+  version = "2.1.0"
+  name    = "${var.application}-dlq"
 
   tags = {
     Service     = var.application
